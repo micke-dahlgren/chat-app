@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import io from 'socket.io-client';
-
+import './Join.scss';
 const ENDPOINT = 'localhost:5000';
 let socket;
 

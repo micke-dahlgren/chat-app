@@ -1,0 +1,27 @@
+@import '../../sass/colors';
+@import '../../sass/utility';
+
+$content-width: 200px;
+
+body{
+  background:col(primary);
+  color:onCol(primary);
+  @include flexCenter(column,0);
+}
+
+.joinOuterContainer{
+  height:100%;
+  width:$content-width;
+}
+
+.joinInnerContainer{
+  @include flexCenter(column,1rem);
+  
+  h1{ 
+    text-align:center;
+  }
+  a, h1, input, select, button {
+    width: 100%;
+  }
+
+}

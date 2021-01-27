@@ -1,0 +1,47 @@
+@import './colors';
+
+$interactable-height:40px;
+$radius: 8px;
+$anim-duration: 0.4s;
+
+
+/* -------- BUTTONS ---------- */
+button{
+  transition: background $anim-duration;
+  height: $interactable-height;
+  border:none;
+  border-radius:$radius;
+  background:col(secondary);
+  color:onCol(secondary);
+
+  &:hover{
+    cursor: pointer;
+  }
+
+  &.alt{
+    background:col(accent-one);
+    color:onCol(accent-one);
+    &:hover{
+      background:lighten(col(accent-one),8);
+    }
+  }
+
+}
+
+a{
+  text-decoration:none
+}
+
+/* -------- INPUT FIELDS ---------- */
+
+input{
+  height:$interactable-height;
+  border-radius: $radius;
+  border:none;
+  padding-left:1rem;
+  background:col(primary-alt);
+  &:focus{
+    outline: none;
+    background:darken(col(primary-alt),5);
+  }
+}

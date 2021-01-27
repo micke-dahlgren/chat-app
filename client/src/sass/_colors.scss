@@ -1,0 +1,27 @@
+
+$colors: (
+  "primary":#F2EFEE,
+  "primary-alt":#EBE4DF,
+  "secondary":#34344A,
+  "secondary-alt":#4E4E64,
+  "accent-one":#5D9763,
+  "accent-two":#CD8EAB
+);
+
+
+$onColors: (
+  "primary":#4B4845,
+  "primary-alt":#8E8985,
+  "secondary":#F2EFEE,
+  "secondary-alt":#EBE4DF,
+  "accent-one":#F2EFEE,
+  "accent-two":#F2EFEE
+);
+
+@function col($color-name){
+  @return map-get($colors, $color-name);
+}
+
+@function onCol($color-name){
+  @return map-get($onColors, $color-name);
+}
